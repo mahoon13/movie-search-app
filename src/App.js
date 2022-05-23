@@ -85,10 +85,8 @@ export default class App extends React.Component {
   sortMovieList() {
     if (this.state.movielist) {
       if (this.state.sortBy === "year") {
-        console.log("year");
         this.sortMovieListByYear();
       } else if (this.state.sortBy === "name") {
-        console.log("name");
         this.sortMovieListByName();
       }
     }
