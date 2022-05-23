@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.movie__img {
+    width: 150px;
+    height: 150px;
+}
+
+.movie__list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+
+.app__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+.movie__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    transition: 0.2s linear;
+    gap: 0.5rem;
+}
+
+.movie__card:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.expand__list_btn {
+    padding: 1rem 4rem;
+    background-color: hsl(219, 79%, 66%);
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s linear;
+    position: fixed;
+    bottom: 5px;
+    right: 50%;
+    transform: translateX(50%);
+    border: 0;
+}
+
+.expand__list_btn:hover {
+    background-color: hsl(219, 79%, 55%);
+}
+
+.navbar {
+    background-color: cornflowerblue;
+    padding: 2rem;
+}
+
+.search__bar {
+    border-radius: 12px;
+    overflow: hidden;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.search__box {
+    border: 0;
+    width: 400px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.search__btn {
+    width: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    transition: 0.2s;
+}
+
+.search__btn:hover {
+    background-color: white;
+}
+
+label {
+    margin-right: 5px;
+}
